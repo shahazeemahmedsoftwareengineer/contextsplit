@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
         {/* Google AdSense – replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8277554524937991"
           crossOrigin="anonymous"
         />
         {/* Structured Data / JSON-LD for SEO */}

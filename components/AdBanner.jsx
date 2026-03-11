@@ -49,7 +49,7 @@ export default function AdBanner({
         ref={adRef}
         className="adsbygoogle block"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"  // ← replace with your publisher ID
+        data-ad-client="ca-pub-8277554524937991"
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive={responsive.toString()}
