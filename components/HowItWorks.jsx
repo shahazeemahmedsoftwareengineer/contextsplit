@@ -23,7 +23,7 @@ const STEPS = [
       </svg>
     ),
     title:       "Choose Your Chunk Count",
-    description: "Use the slider to pick how many pieces to split your file into — from 2 to 20. We evenly distribute lines so each chunk gives the AI a balanced portion of context.",
+    description: "Use the slider to pick how many pieces to split your file into — from 2 to 100. We evenly distribute lines so each chunk gives the AI a balanced portion of context.",
     color:       "from-brand-lavender to-purple-50",
     accent:      "rgba(244,239,255,1)",
   },

@@ -8,7 +8,7 @@ const TEAM_VALUES = [
   {
     icon: "⚡",
     title:       "Built for Speed",
-    description: "Processing happens locally in milliseconds. Split a 10MB file into 20 chunks in under a second, with no loading spinners.",
+    description: "Processing happens locally in milliseconds. Split a file up to 100 chunks in under a second, with no loading spinners.",
   },
   {
     icon: "🌍",

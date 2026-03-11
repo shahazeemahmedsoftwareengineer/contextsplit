@@ -7,8 +7,6 @@ const FOOTER_LINKS = {
   ],
   Legal: [
     { label: "Privacy Policy",    href: "/privacy"  },
-    { label: "Terms of Service",  href: "/terms"    },
-    { label: "Cookie Policy",     href: "/cookies"  },
   ],
 };
 
@@ -36,8 +34,7 @@ export default function Footer() {
             </a>
 
             <p className="text-sm text-brand-muted leading-relaxed max-w-xs mb-5">
-              The free, private tool for splitting AI conversation files into chunks — so you
-              never lose context when hitting free-tier limits.
+              The free, private tool for splitting AI conversation files. We never collect data; everything runs locally in your browser.
             </p>
 
             {/* Social links (placeholder) */}
