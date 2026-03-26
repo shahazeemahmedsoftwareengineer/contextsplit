@@ -53,8 +53,8 @@ export const metadata = {
       "max-snippet":       -1,
     },
   },
-  verification: {
-    // google: "YOUR_GOOGLE_SEARCH_CONSOLE_ID", // Add your verification code
+  other: {
+    "google-adsense-account": "ca-pub-8277554524937991",
   },
 };
 
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense – replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID */}
+        {/* Google AdSense Verification & Ad Delivery */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8277554524937991"
