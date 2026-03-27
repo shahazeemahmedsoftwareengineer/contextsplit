@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const DownloadBanner = () => {
+  const [isAndroid, setIsAndroid] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsAndroid(/android/i.test(navigator.userAgent));
+    }
+  }, []);
+
   return (
-    <div className="glass-card bg-gradient-to-r from-brand-lavender/50 to-brand-peach/30 border-brand-purple/20 p-4 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className={`glass-card bg-gradient-to-r from-brand-lavender/50 to-brand-peach/30 border-brand-purple/20 p-4 mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 ${isAndroid ? "ring-2 ring-brand-purple/40 ring-offset-1" : ""}`}>
       <div className="flex items-center gap-3 text-left">
         <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm flex-shrink-0">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -11,8 +19,8 @@ const DownloadBanner = () => {
           </svg>
         </div>
         <div>
-          <p className="text-sm font-bold text-brand-charcoal">Prefer a mobile app?</p>
-          <p className="text-xs text-brand-muted">Download our Android app for a faster, smoother experience.</p>
+          <p className="text-sm font-bold text-brand-charcoal">{isAndroid ? "Android App Recommended" : "Prefer a mobile app?"}</p>
+          <p className="text-xs text-brand-muted">{isAndroid ? "Get the app for a faster, smoother experience on your device." : "Download our Android app for a better mobile experience."}</p>
         </div>
       </div>
       <a
