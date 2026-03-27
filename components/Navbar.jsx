@@ -58,6 +58,15 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
+          <a 
+            href="/app/contextsplit-v1.apk" 
+            download="ContextSplit.apk" 
+            className="btn-ghost text-xs px-3 py-2 flex items-center gap-2"
+          >
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            Get Android App
+          </a>
+          
           <a href="#tool" className="btn-primary text-sm">
             Split My File
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useCallback } from "react";
 import { splitTextIntoChunks, downloadChunk, formatBytes } from "@/lib/chunkFile";
+import DownloadBanner from "./DownloadBanner";
 
 export default function ChunkTool() {
   const [file,          setFile]          = useState(null);
@@ -97,6 +98,8 @@ export default function ChunkTool() {
 
         {/* Tool Card */}
         <div className="glass-card max-w-3xl mx-auto p-5 sm:p-8 md:p-10">
+
+          <DownloadBanner />
 
           {/* Step 1 */}
           <div className="mb-6 sm:mb-8">
