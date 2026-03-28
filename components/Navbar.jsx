@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a 
-            href="/app/contextsplit-v1.apk" 
+            href="/contextsplit-v1.apk" 
             download="ContextSplit.apk" 
             className="btn-ghost text-xs px-3 py-2 flex items-center gap-2"
           >
@@ -108,6 +108,15 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/contextsplit-v1.apk"
+              download="ContextSplit.apk"
+              onClick={() => setMenuOpen(false)}
+              className="py-3 px-2 text-sm font-medium text-brand-purple flex items-center gap-2 hover:bg-brand-gray rounded-lg transition-colors"
+            >
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+              Get Android App
+            </a>
             <a
               href="#tool"
               onClick={() => setMenuOpen(false)}
