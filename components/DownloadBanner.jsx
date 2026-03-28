@@ -24,7 +24,7 @@ const DownloadBanner = () => {
         </div>
       </div>
       <a
-        href="/app/contextsplit-v1.apk"
+        href="/contextsplit-v1.apk"
         download="contextsplit-v1.apk"
         className="btn-purple text-xs px-4 py-2 w-full sm:w-auto text-center"
       >
