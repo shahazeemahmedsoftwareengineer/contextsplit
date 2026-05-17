@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand col */}
           <div className="md:col-span-2">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2.5 mb-4" aria-label="ContextSplit home">
+            <a href="/" className="flex items-center gap-2.5 mb-4" aria-label="ContextSplit home">
               <div className="w-8 h-8 rounded-xl bg-brand-charcoal flex items-center justify-center">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <rect x="1" y="1" width="6" height="14" rx="1.5" fill="white" opacity="0.9" />

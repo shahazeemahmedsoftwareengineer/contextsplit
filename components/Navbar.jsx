@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className="section-container flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5" aria-label="ContextSplit Home">
+        <a href="/" className="flex items-center gap-2.5" aria-label="ContextSplit Home">
           <div className="w-8 h-8 rounded-xl bg-brand-charcoal flex items-center justify-center">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <rect x="1" y="1" width="6" height="14" rx="1.5" fill="white" opacity="0.9" />
@@ -59,8 +59,8 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a 
-            href="/contextsplit-v1.apk" 
-            download="contextSplit.apk" 
+            href="/contextsplit-v2.apk" 
+            download="contextsplit-v2.apk" 
             className="btn-ghost text-xs px-3 py-2 flex items-center gap-2"
           >
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
@@ -81,6 +81,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             {menuOpen ? (
@@ -96,7 +97,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-brand-charcoal/8 bg-white/95 backdrop-blur-md">
+        <div id="mobile-menu" className="md:hidden border-t border-brand-charcoal/8 bg-white/95 backdrop-blur-md">
           <nav className="section-container py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
@@ -109,8 +110,8 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/contextsplit-v1.apk"
-              download="ContextSplit.apk"
+              href="/contextsplit-v2.apk"
+              download="contextsplit-v2.apk"
               onClick={() => setMenuOpen(false)}
               className="py-3 px-2 text-sm font-medium text-brand-purple flex items-center gap-2 hover:bg-brand-gray rounded-lg transition-colors"
             >
